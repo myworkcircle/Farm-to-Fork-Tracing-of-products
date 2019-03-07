@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Product</title>
+<meta name ="viewport" content ="width=device-width, initial-scale=1"> 
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"> -->
+</script>
+
+<style>
+ body { 
+	background:#ffffff;
+}
+.container{
+	margin-top:200px;
+}
+.glyphicon-search{
+	font-size:20px;
+}
+.btn-default{
+	background:orange;
+	width:100px;
+	padding:12.5px;
+	font-size:17px
+}
+.form-control{
+	padding:25px;
+	font-size:20px;
+} 
+
+</style>
+
+</head>
+<body>
+<div class ="container">
+      <form action="../elevator/elevatorsearch.php" method="POST">
+              <div class ="input-group">
+              <input type ="text" class="form-control" placeholder ="Enter product id" name ="search">
+              <div class ="input-group-btn">
+              <button class="btn btn-default" type ="submit" id="mybutton">search</button> 
+             
+              </div>
+              </div>
+      </form>   
+</div>
+
+
+
+</body>
+</html>

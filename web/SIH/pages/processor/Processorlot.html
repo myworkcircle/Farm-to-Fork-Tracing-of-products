@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Processor</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../../vendors/icheck/skins/all.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(e){
+      //variable
+      var html = '<div><input type="text" class="form-control" id="childexampleInputEmail3" placeholder="Lot Type" name="farmer_id[]" /><a href="#" id="remove">X</a></div>';
+
+      $("#add").click(function(e){
+         $("#container").append(html);
+      });
+      var html2 = '<div><input type="text" class="form-control" id="childexampleInputEmail6" placeholder="ingredient" name="ingredient[]" /><a href="#" id="remove">X</a></div>';
+      //add rows to form
+      
+      $("#add1").click(function(e){
+         $("#container1").append(html2);
+      });
+
+      //remove row
+      $("#container").on('click','#remove',function(e){
+          $(this).parent('div').remove();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="../../index/index.html">
+          <img src="../../images/logo.PNG" alt="logo" />
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="../../index/index.html">
+          <img src="../../images/logo-mini.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+          <li class="nav-item">
+            <a href="../samples/search.html" class="nav-link">Search Product
+              
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          
+          
+          <li class="nav-item dropdown d-none d-xl-inline-block">
+            <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <span class="profile-text">Hello, Mukesh Ambani !</span>
+              <img class="img-xs rounded-circle" src="../../images/faces/face1.jpg" alt="Profile image">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <a class="dropdown-item p-0">
+                
+              </a>
+              
+              <a class="dropdown-item" href="../samples/login.html">
+                Sign Out
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <div class="nav-link">
+              <div class="user-wrapper">
+                <div class="profile-image">
+                  <img src="../../images/faces/face1.jpg" alt="profile image">
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Mukesh Ambani</p>
+                  <div>
+                    <small class="designation text-muted">Processor</small>
+                    <span class="status-indicator online"></span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="processorprofile.php">
+              <i class="menu-icon mdi mdi-television"></i>
+              <span class="menu-title">Processor Profile</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Processorlot.html">
+              <i class="menu-icon mdi mdi-backup-restore"></i>
+              <span class="menu-title">Submit Product Detail</span>
+            </a>
+          </li>                     
+          
+          
+          
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            
+            <div class="col-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Product Details</h4>
+                  <p class="card-description">
+                    Enter Manufactured Product Details
+                  </p>
+                  <form class="forms-sample" action="processordatabase.php" method="POST">
+                    <div class="form-group">
+                      <label for="exampleInputName1">Enter your ID</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Processor ID" name="your_id">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail3">Enter Product ID</label>
+                      <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Product ID" name="product_id">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="exampleInputEmail3">Enter Manufacturing Date</label>
+                      <input type="date" class="form-control" id="exampleInputEmail3" placeholder="dd-mm-yy" name="manufacturing_date">
+                    </div>  
+                    <div class="form-group">
+                      <label for="exampleInputEmail3">Enter Expiry Date</label>
+                      <input type="datet" class="form-control" id="exampleInputEmail3" placeholder="Lot Amount" name="expiry_date">
+                    </div>  
+                    <div class="form-group">
+                      <label for="exampleInputEmail3">Enter Shipment ID</label>
+                      <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Month" name="shipment_id">
+                    </div> 
+                    <div class="form-group">
+                      <label for="exampleInputName1">Enter Shipment Date</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Elevator ID" name="shipment_date">
+                    </div>  
+                    <div class="form-group" id="container">
+                        <label for="exampleInputEmail3">Farmer id</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Lot Type" name="farmer_id[]">
+                        <a href="#" id="add">Add More</a>
+                      </div>
+                      <div class="form-group" id="container1">
+                        <label for="exampleInputEmail3">Ingredients</label>
+                        <input type="text" class="form-control" id="exampleInputEmail6" placeholder="Lot Type" name="ingredient[]">
+                        <a href="#" id="add1">Add More</a>
+                      </div> 
+                    <button type="date" class="btn btn-success mr-2">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 d-flex align-items-stretch">
+              <div class="row flex-grow">
+                
+                
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
+              <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
+              <i class="mdi mdi-heart text-danger"></i>
+            </span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
