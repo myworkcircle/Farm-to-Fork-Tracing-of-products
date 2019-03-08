@@ -2,4 +2,4 @@ We have hosted website at using responsive AWS services on RDS adn EC2. IP of sa
 App is build using Adobe XD.
 IOT device is build NodeMCU and DHT11 Sensors.ALl libraries used are also present.
 Thank you!
-in case of any issue please contact Rishabh-9594567750.
+in case of any issue please contact chap.rishabh@gmail.com.
