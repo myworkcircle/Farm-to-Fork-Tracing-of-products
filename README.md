@@ -1,4 +1,3 @@
-# Smart India Hackthon 
 Farm to fork Traceability-https://drive.google.com/open?id=1qtI0uoyjO0ZEwSyfMw62IlrcaOItqIjU 
 
 A portal for tracing the production, condition of the product while the product is being shipped.
