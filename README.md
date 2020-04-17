@@ -1,4 +1,7 @@
-# Farm to fork Traceability-https://drive.google.com/open?id=1qtI0uoyjO0ZEwSyfMw62IlrcaOItqIjU 
+# Farm to fork Traceability
+
+Link to the pdf describing the idea:-
+https://drive.google.com/open?id=1qtI0uoyjO0ZEwSyfMw62IlrcaOItqIjU 
 
 A portal for tracing the production, condition of the product while the product is being shipped.
 
