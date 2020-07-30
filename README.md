@@ -9,7 +9,7 @@ It traces the product from farm to fork and maintain complete transparebility ab
 
 This portal makes it easier to identify the problem that is at which step the fault has occured. Subsequently saving money and resources.
 
-Tech Stack Used:-
+Tech Stack Used:
 PHP  
 MYSQL
 JS
